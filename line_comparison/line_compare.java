@@ -1,15 +1,28 @@
 package line_comparison;
 
 public class line_compare {
+		
+		public static void is_line_equal(line line_1, line line_2) {
+			
+			//check length of both lines
+			if (line_1.equals(line_2)) {
+				System.out.println("Both lines are of Equal length.");
+			}
+			else {
+				System.out.println("Lines are unequal.");
+			}
+			
+		}
+	
 		public static void main(String[] args) {
 			System.out.println("Welcome to Line Comparison Computation Program!");
 		
 			line line1 = new line(0,0,3,4);
+			line line2 = new line(0,0,3,5);
+			line1.print_line();
+			line2.print_line();
 			
-			System.out.printf("Points provided - \nP1 [X1,Y1] = [%f,%f] \n"
-					+ "P2 [X1,Y1] = [%f,%f] \n"
-					+ "Length of provided Line is : %f \n",
-					line1.x1, line1.y1, line1.x2, line1.y2, line1.length_of_line);
+			is_line_equal(line1, line2);
 		
 		}
 }
