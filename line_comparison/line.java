@@ -37,6 +37,18 @@ public class line {
 	}
 	
 	
+/*	@Override
+	public int compareTo(line line_1) {
+	  
+		if (line_1.length_of_line > this.length_of_line)
+			return (int) line_1.length_of_line - this.length_of_line;
+		
+		return ;
+	}
+*/	
+	
+	
+	
 	
 	
 	
