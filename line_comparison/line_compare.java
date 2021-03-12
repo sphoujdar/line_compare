@@ -21,9 +21,15 @@ public class line_compare {
 	
 		public static void main(String[] args) {
 			System.out.println("Welcome to Line Comparison Computation Program!");
-		
-			line line1 = new line(0,0,3,4);
-			line line2 = new line(0,0,3,5);
+			
+			Point o = new Point(0, 0);
+			Point a = new Point(3, 4);
+			Point b = new Point(3, 5);
+			
+			line line1 = new line(o,a);
+			line line2 = new line(o,b);
+			
+			
 			System.out.println("Line 1 : ");
 			line1.print_line();
 			System.out.println("Line 2 : ");
